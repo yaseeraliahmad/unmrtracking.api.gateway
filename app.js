@@ -174,7 +174,7 @@ var apis={};
 app.set('trust proxy', true);
 app.use(async(req, res,next) => {
   try{
-    if(req.path=="/registerapis"&&req.method.toUpperCase()=="GET"){
+    if(req.path=="/"&&req.method.toUpperCase()=="GET"){
       res.status(200).end("Server is running...");
       return;
     } else if(req.path=="/registerapis"&&req.method.toUpperCase()=="POST"){
