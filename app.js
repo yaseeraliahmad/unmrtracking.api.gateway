@@ -159,7 +159,7 @@ const corsOptions ={
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200,
 }
-
+console.log(corsOptions);
 app.use(cors(corsOptions)) // Use this after the variable declaration
 // app.use(multer({dest:path.join(__dirname,"public/update/temp/")}).any());
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
